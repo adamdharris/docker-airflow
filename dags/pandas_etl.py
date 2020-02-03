@@ -8,7 +8,7 @@ default_arguments = {
     'owner': 'airflow',
     'start_date': datetime(2019, 5, 15, 0, 0, 0),
     'retries': 3,
-    'retry_delay': timedelta(minutes=10)
+    'retry_delay': timedelta(seconds=30)
 }
 
 dag = DAG(dag_id='pandas_etl',
