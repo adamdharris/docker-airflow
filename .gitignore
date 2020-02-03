@@ -32,3 +32,6 @@ logs
 .env
 local.env
 venv
+
+# Github
+.github
