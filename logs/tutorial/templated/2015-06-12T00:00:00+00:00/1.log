@@ -1,0 +1,61 @@
+[2020-02-03 03:38:47,683] {{taskinstance.py:655}} INFO - Dependencies all met for <TaskInstance: tutorial.templated 2015-06-12T00:00:00+00:00 [queued]>
+[2020-02-03 03:38:47,725] {{taskinstance.py:655}} INFO - Dependencies all met for <TaskInstance: tutorial.templated 2015-06-12T00:00:00+00:00 [queued]>
+[2020-02-03 03:38:47,727] {{taskinstance.py:866}} INFO - 
+--------------------------------------------------------------------------------
+[2020-02-03 03:38:47,730] {{taskinstance.py:867}} INFO - Starting attempt 1 of 2
+[2020-02-03 03:38:47,730] {{taskinstance.py:868}} INFO - 
+--------------------------------------------------------------------------------
+[2020-02-03 03:38:47,744] {{taskinstance.py:887}} INFO - Executing <Task(BashOperator): templated> on 2015-06-12T00:00:00+00:00
+[2020-02-03 03:38:47,747] {{standard_task_runner.py:52}} INFO - Started process 317 to run task
+[2020-02-03 03:38:47,958] {{logging_mixin.py:112}} INFO - [2020-02-03 03:38:47,958] {{dagbag.py:403}} INFO - Filling up the DagBag from /usr/local/airflow/dags/tuto.py
+[2020-02-03 03:38:48,075] {{logging_mixin.py:112}} INFO - Running %s on host %s <TaskInstance: tutorial.templated 2015-06-12T00:00:00+00:00 [running]> 8f80e5b8585f
+[2020-02-03 03:38:48,206] {{bash_operator.py:81}} INFO - Tmp dir root location: 
+ /tmp
+[2020-02-03 03:38:48,208] {{bash_operator.py:91}} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@airflow.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=templated
+AIRFLOW_CTX_EXECUTION_DATE=2015-06-12T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2015-06-12T00:00:00+00:00
+[2020-02-03 03:38:48,221] {{bash_operator.py:105}} INFO - Temporary script location: /tmp/airflowtmpgo240kmf/templated0rv44ku5
+[2020-02-03 03:38:48,225] {{bash_operator.py:115}} INFO - Running command: 
+    
+        echo "2015-06-12"
+        echo "2015-06-19"
+        echo "Parameter I passed in"
+    
+        echo "2015-06-12"
+        echo "2015-06-19"
+        echo "Parameter I passed in"
+    
+        echo "2015-06-12"
+        echo "2015-06-19"
+        echo "Parameter I passed in"
+    
+        echo "2015-06-12"
+        echo "2015-06-19"
+        echo "Parameter I passed in"
+    
+        echo "2015-06-12"
+        echo "2015-06-19"
+        echo "Parameter I passed in"
+    
+[2020-02-03 03:38:48,324] {{bash_operator.py:124}} INFO - Output:
+[2020-02-03 03:38:48,584] {{bash_operator.py:128}} INFO - 2015-06-12
+[2020-02-03 03:38:48,585] {{bash_operator.py:128}} INFO - 2015-06-19
+[2020-02-03 03:38:48,585] {{bash_operator.py:128}} INFO - Parameter I passed in
+[2020-02-03 03:38:48,586] {{bash_operator.py:128}} INFO - 2015-06-12
+[2020-02-03 03:38:48,586] {{bash_operator.py:128}} INFO - 2015-06-19
+[2020-02-03 03:38:48,587] {{bash_operator.py:128}} INFO - Parameter I passed in
+[2020-02-03 03:38:48,587] {{bash_operator.py:128}} INFO - 2015-06-12
+[2020-02-03 03:38:48,587] {{bash_operator.py:128}} INFO - 2015-06-19
+[2020-02-03 03:38:48,588] {{bash_operator.py:128}} INFO - Parameter I passed in
+[2020-02-03 03:38:48,588] {{bash_operator.py:128}} INFO - 2015-06-12
+[2020-02-03 03:38:48,589] {{bash_operator.py:128}} INFO - 2015-06-19
+[2020-02-03 03:38:48,589] {{bash_operator.py:128}} INFO - Parameter I passed in
+[2020-02-03 03:38:48,589] {{bash_operator.py:128}} INFO - 2015-06-12
+[2020-02-03 03:38:48,590] {{bash_operator.py:128}} INFO - 2015-06-19
+[2020-02-03 03:38:48,590] {{bash_operator.py:128}} INFO - Parameter I passed in
+[2020-02-03 03:38:48,591] {{bash_operator.py:132}} INFO - Command exited with return code 0
+[2020-02-03 03:38:58,345] {{logging_mixin.py:112}} INFO - [2020-02-03 03:38:57,695] {{local_task_job.py:103}} INFO - Task exited with return code 0

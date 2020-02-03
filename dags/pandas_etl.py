@@ -2,7 +2,7 @@ from airflow.models import DAG
 from datetime import datetime, timedelta
 import logging as log
 
-from ..operators.pandas_etl_over_postgres_operator import PandasETLOverPostgresOperator
+from operators.pandas_etl_over_postgres_operator import PandasETLOverPostgresOperator
 
 default_arguments = {
     'owner': 'airflow',
