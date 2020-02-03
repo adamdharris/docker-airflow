@@ -24,3 +24,8 @@ sftp-config.json
 
 # Python
 __pycache__
+
+# virtural env
+.env
+local.env
+venv

@@ -1,1 +1,4 @@
 .git
+*.md
+
+src/venv/*
